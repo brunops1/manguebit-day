@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.footer-body {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 3rem;
+    background-color: $main-grey;
+    align-items: center;
+    justify-content: center;
+    .footer-image {
+        width: 17rem;
+        @media (max-width: 300px) {
+            width: 12rem;
+        }
+    }
+}

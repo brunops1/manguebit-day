@@ -1,0 +1,15 @@
+<div class="menu-button" (click)="openDropdownMenu()">
+    <img class="button" src="../../../assets/images/menu-button.png">
+</div>
+
+<div class="menu-list">
+    <ul class="list">
+        <li class="list-item" (click)="scrollDown('about')"><a>Sobre</a></li>
+        <li class="separator"></li>
+        <li class="list-item" (click)="scrollDown('schedule')"><a>Programação</a></li>
+        <li class="separator"></li>
+        <li class="list-item" (click)="goToUrl('https://www.even3.com.br/manguebit-2024-438948/')"><a style="text-decoration: none; color: white;">Inscrição</a></li>
+        <li class="separator"></li>
+        <li class="list-item" (click)="scrollDown('partners')"><a>Patrocínio</a></li>
+    </ul>
+</div>

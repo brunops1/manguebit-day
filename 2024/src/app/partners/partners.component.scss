@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+
+.partners-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    height: 40rem;
+    .title {
+        font-family: $inter;
+        font-size: 30px;
+        font-weight: 800;
+        margin: 6rem 3.5rem 3.5rem 3.5rem;
+        color: $main-purple;
+        @media (max-width: 815px) {
+            margin: 11rem 0rem 3.5rem 0rem;
+        }
+        @media (max-width: 450px) {
+            font-size: 25px;
+        }
+        @media (max-width: 330px) {
+            margin: 8rem 0rem 3.5rem 0rem;
+        }
+        @media (max-width: 260px) {
+            font-size: 20px;
+        }
+        @media (max-width: 215px) {
+            margin: 6rem 0rem 3.5rem 0rem;
+        }
+    }
+    .decorator {
+        position: absolute;
+        width: 20rem;
+        top: -4.5rem;
+        left: -3.8rem;
+        transform: rotate(-14.5deg);
+        @media (max-width: 330px) {
+            width: 15rem;
+        }
+        @media (max-width: 215px) {
+            width: 12rem;
+        }
+    }
+}
