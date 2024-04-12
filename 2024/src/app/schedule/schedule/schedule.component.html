@@ -1,0 +1,13 @@
+<div class="schedule-body">
+    <div class="title" style="margin: 3.5rem 0;">Programação</div>
+    <div class="cards">
+        <div class="card-background" *ngFor="let schedule of schedules">
+            <div class="card">
+                <img class="decoration" src="../../../assets/images/card-decoration-green.png">
+                <div class="title">{{ schedule.title }}</div>
+                <div class="time">{{ schedule.time }}</div>
+                <div class="text">{{ schedule.text }}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+@import '../../../styles.scss';
+
+
+.menu-button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: 450px) {
+        display: flex;
+    }
+    .button {
+        width: 3.7rem;
+        padding: 0.5rem 0 0 0;
+    }
+}
+
+.menu-list {
+    flex: 1;
+    @media (max-width: 450px) {
+        flex: 0;
+    }
+    .list {
+        position: static;
+        display: flex;
+        list-style: none;
+        gap: 8rem;
+        flex: 1;
+        @media (max-width: 1024px) {
+            gap: 5rem;
+        }
+        @media (max-width: 720px) {
+            gap: 2rem;
+        }
+        @media (max-width: 590px) {
+            gap: 1rem;
+        }
+        @media (max-width: 450px) {
+            position: absolute;
+            width: 12rem;
+            font-size: 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0;
+            border-radius: 0.2rem;
+            background-color: $main-green;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            left: 2.3rem;
+            top: 1rem;
+            opacity: 0;
+            transition: all .1s ease-out;
+            pointer-events: none;
+            cursor: default;
+        }
+        .list-item {
+            cursor: pointer;
+            @media (max-width: 450px) {
+                padding: 0.7rem 1.2rem;
+                width: 100%;
+            }
+            a {
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                text-decoration: none;
+                color: white;
+                @media (max-width: 450px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .separator {
+            display: none;
+            @media (max-width: 450px) {
+                display: flex;
+                width: 100%;
+                background-color: white;
+                height: 0.05rem;
+            }
+        }
+    }
+    .dropdown-active {
+        top: 3.55rem;
+        left: 3rem;
+        opacity: 1;
+        pointer-events: all;
+        cursor: pointer;
+    }
+}

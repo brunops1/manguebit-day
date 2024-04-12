@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+-webkit-scrollbar {
+    display: none;
+}
+
+// Colors scheme
+$main-green: #69B973;
+$main-purple: #452F7B;
+$main-grey: #F4F4F5;
+
+// Fonts
+$inter: 'Inter', sans-serif;
+
+
+
+
