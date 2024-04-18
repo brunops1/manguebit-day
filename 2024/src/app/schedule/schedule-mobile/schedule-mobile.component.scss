@@ -22,6 +22,41 @@
     .right-arrow {
         right: 0;
     }
+    .coming-soon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30rem;
+        @media (max-width: 580px) {
+            width: 80%;
+        }
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('../../../assets/images/IDV-Mangue_BACKGROUND.png');
+            width: 100%;
+            background-size: contain;
+            padding: 2rem 2rem;
+            justify-content: space-around;
+            height: 13rem;
+            min-height: 13rem;
+            .decoration {
+                position: absolute;
+                background-color: transparent;
+                top: -0.5rem;
+            }
+            .title {
+                color: $main-purple;
+                font-size: 30px;
+                font-weight: 500;
+                @media (max-width: 275px) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
     .title {
         font-family: $inter;
         font-size: 30px;

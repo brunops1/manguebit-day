@@ -22,9 +22,9 @@ export class MainComponent implements OnInit {
 
   public ngOnInit(): void {
     const navBarWidth = (this.document.getElementsByClassName('nav-bar-body')[0] as HTMLElement).offsetWidth;
-    if (navBarWidth <= 1024 && navBarWidth > 450) {
+    if (navBarWidth <= 1024 && navBarWidth > 580) {
       this.tablet = true;
-    } else if (navBarWidth <= 450) {
+    } else if (navBarWidth <= 580) {
       this.mobile = true;
     }
   }

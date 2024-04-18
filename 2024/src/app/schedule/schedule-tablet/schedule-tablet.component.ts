@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { scheduleOptions } from '../schedule-options';
+import { ScheduleService } from '../schedule.service';
 
 @Component({
   selector: 'app-schedule-tablet',
   templateUrl: './schedule-tablet.component.html',
-  styleUrl: './schedule-tablet.component.scss'
+  styleUrl: './schedule-tablet.component.scss',
+  providers: [ScheduleService]
 })
 export class ScheduleTabletComponent implements OnInit {
 
   public scheduleOptions = scheduleOptions;
   public schedulePair: { first?: { title: string; time: string; text: string }, second?: { title: string; time: string; text: string } } = {};
   public index = 0;
+
+  constructor(public readonly scheduleService: ScheduleService) {}
   
   public ngOnInit(): void {
     if (this.index <= this.scheduleOptions.length - 2) {
