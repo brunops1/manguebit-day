@@ -27,6 +27,7 @@
         font-size: 30px;
         font-weight: 800;
         color: white;
+        text-align: center;
     }
     .coming-soon {
         display: flex;
@@ -77,8 +78,8 @@
                 background-image: url('../../../assets/images/IDV-Mangue_BACKGROUND.png');
                 width: 12rem;
                 background-size: contain;
-                padding: 2rem 2rem;
-                justify-content: space-around;
+                padding: 2rem 1rem;
+                justify-content: flex-start;
                 height: 13rem;
                 min-height: 13rem;
                 .decoration {
@@ -87,18 +88,26 @@
                     top: -0.5rem;
                 }
                 .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     color: $main-purple;
                     font-size: 12px;
+                    height: 3rem;
+                    min-height: 3rem;
+                    max-height: 3rem;
+                    margin: 0 0 0.5rem 0;
                 }
                 .time {
                     color: $main-purple;
                     font-family: $inter;
                     font-size: 16px;
                     font-weight: 800;
+                    margin: 0 0 1rem 0;
                 }
                 .text {
                     font-family: $inter;
-                    font-size: 12px;
+                    font-size: 11px;
                     color: $main-purple;
                     text-align: center;
                     font-weight: 400;
