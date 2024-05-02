@@ -1,181 +1,65 @@
 @import '../../../styles.scss';
 
 .banner-body {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 450px) {
-        background-image: url('../../../assets/images/MOBILE-BANNER.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+    padding: 70px 0 0 0;
+    @media (max-width: 580px) {
+        padding: 0;
     }
     .banner-image {
         width: 100%;
-        content: url('../../../assets/images/DESKTOP-BANNER.png');
+        background-position: 50% 50%;
         @media (max-width: 1024px) {
             content: url('../../../assets/images/TABLET-BANNER.png');
         }
-        @media (max-width: 450px) {
-            flex: 0;
-            pointer-events: none;
-            visibility: hidden;
+        @media (max-width: 580px) {
             content: url('../../../assets/images/MOBILE-BANNER.png');
         }
     }
-}
-
-.button {
-    color: $main-purple;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    display: none;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0.2rem 0.2rem;
-    top: 80%;
-    cursor: default;
-    @media (max-width: 1024px) {
-        justify-content: center;
-        background-position: 50% 50%;
-        width: 12rem;
-        min-width: 12rem;
-        height: 8rem;
-        min-height: 2rem;
-    }
-    @media (max-width: 450px) {
+    .banner-overlay {
+        flex: 1;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 78%;
-        left: 29%;
-    }
-    @media (max-width: 430px) {
-        top: 75%;
-        left: 27%;
-    }
-    @media (max-width: 417px) {
-        top: 72%;
-        left: 28%;
-    }
-    @media (max-width: 401px) {
-        top: 69%;
-        left: 26%;
-    }
-    @media (max-width: 387px) {
-        top: 66%;
-        left: 24%;
-    }
-    @media (max-width: 373px) {
-        top: 64%;
-        left: 25%;
-    }
-    @media (max-width: 363px) {
-        top: 62%;
-        left: 25%;
-    }
-    @media (max-width: 351px) {
-        top: 59%;
-        left: 28%;
-        width: 10rem;
-        min-width: 10rem;
-        height: 8rem;
-        min-height: 2rem;
-    }
-    @media (max-width: 337px) {
-        top: 57%;
-        left: 26%;
-    }
-    @media (max-width: 326px) {
-        top: 55%;
-        left: 25%;
-    }
-    @media (max-width: 318px) {
-        top: 53%;
-        left: 25%;
-    }
-    @media (max-width: 308px) {
-        top: 51%;
-        left: 23%;
-    }
-    @media (max-width: 297px) {
-        top: 49%;
-        left: 24%;
-    }
-    @media (max-width: 287px) {
-        top: 47%;
-        left: 23%;
-    }
-    @media (max-width: 275px) {
-        top: 45%;
-        left: 27%;
-        width: 8rem;
-        min-width: 8rem;
-        height: 8rem;
-        min-height: 2rem;
-    }
-    @media (max-width: 266px) {
-        top: 43%;
-        left: 27%;
-    }
-    @media (max-width: 256px) {
-        top: 41%;
-        left: 26%;
-    }
-    @media (max-width: 246px) {
-        top: 39%;
-        left: 25%;
-    }
-    @media (max-width: 236px) {
-        top: 37%;
-        left: 24%;
-    }
-    @media (max-width: 226px) {
-        top: 35%;
-        left: 22%;
-    }
-    @media (max-width: 216px) {
-        top: 33%;
-        left: 22%;
-    }
-    @media (max-width: 206px) {
-        top: 31%;
-        left: 21%;
-    }
-    @media (max-width: 196px) {
-        top: 30%;
-        left: 19%;
-    }
-    @media (max-width: 186px) {
-        top: 28%;
-        left: 15%;
-    }
-    @media (max-width: 176px) {
-        top: 26%;
-        left: 15%;
-    }
-    @media (max-width: 166px) {
-        top: 24%;
-        left: 12%;
-    }
-    @media (max-width: 156px) {
-        top: 22%;
-        left: 11%;
-    }
-    a {
-        font-family: $inter;
-        font-size: 10px;
-        font-weight: 500;
-        padding: 0.1rem 0.8rem 0.1rem 0.8rem;
-        margin: 0 0 0.2rem 0.2rem;
-        cursor: pointer;
-        @media (max-width: 1024px) {
-            font-size: 16px;
-            margin: 0 0 1rem 0;
-            padding: 0.3rem 0 0 0;
+        .button-div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .button {
+                width: 25%;
+                margin: 22% 0 0 0;
+                cursor: pointer;
+                @media (max-width: 1024px) {
+                    width: 20%;
+                    margin: -5% 0 0 4%;
+                }
+                @media (max-width: 580px) {
+                    width: 60%;
+                    margin: 30% 0 0 0;
+                }
+            }
+            .button:hover {
+                opacity: 0.7;
+            }
         }
-        @media (max-width: 275px) {
-            font-size: 14px;
+        .ghost-div {
+            flex: 1;
+            background-color: transparent;
+            height: 10rem;
+            width: 10rem;
+            height: 100%;
+            pointer-events: none;
+            @media (max-width: 1024px) {
+                display: none;
+            }
         }
     }
 }

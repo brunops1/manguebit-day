@@ -1,77 +1,57 @@
 export const scheduleOptions: { title: string; time: string; text: string}[] = [
     {
-        title: 'Lorem Ipsum - 0',
-        time: '08h - 0',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Open Talent Economy',
+        time: '10h10',
+        text: ''
     },
     {
-        title: 'Lorem Ipsum - 1',
-        time: '08h - 1',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Capitalizando o Futuro',
+        time: '10h35',
+        text: 'Startups de Recife e a Jornada do Investimento'
     },
     {
-        title: 'Lorem Ipsum - 2',
-        time: '08h - 2',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Case surpresa',
+        time: '11h20',
+        text: ''
     },
     {
-        title: 'Lorem Ipsum - 3',
-        time: '08h - 3',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Inovação Aberta',
+        time: '11h40',
+        text: 'Como Grandes Empresas Permanecem Relevante em um Mundo em Constante Mudança'
     },
     {
-        title: 'Lorem Ipsum - 4',
-        time: '08h - 4',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Report Porto Digital',
+        time: '12h25',
+        text: ''
     },
     {
-        title: 'Lorem Ipsum - 5',
-        time: '08h - 5',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Report Manguezal',
+        time: '15h30',
+        text: ''
     },
     {
-        title: 'Lorem Ipsum - 6',
-        time: '08h - 6',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Segurança Digital',
+        time: '15h45',
+        text: 'Como as Startups podem mitigar riscos de segurança da informação'
     },
     {
-        title: 'Lorem Ipsum - 7',
-        time: '08h - 7',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Case surpresa',
+        time: '16h30',
+        text: ''
     },
     {
-        title: 'Lorem Ipsum - 8',
-        time: '08h - 8',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Do Porto ao sertão',
+        time: '16h50',
+        text: 'Cultura e Negócios em Pernambuco'
     },
     {
-        title: 'Lorem Ipsum - 9',
-        time: '08h - 9',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Case surpresa',
+        time: '17h35',
+        text: ''
     },
     {
-        title: 'Lorem Ipsum - 10',
-        time: '08h - 10',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
+        title: 'Desvendando o Futuro',
+        time: '17h55',
+        text: 'Será que a primavera das startups chegou'
     },
-    {
-        title: 'Lorem Ipsum - 11',
-        time: '08h - 11',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
-    },
-    {
-        title: 'Lorem Ipsum - 12',
-        time: '08h - 12',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
-    },
-    {
-        title: 'Lorem Ipsum - 13',
-        time: '08h - 13',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
-    },
-    {
-        title: 'Lorem Ipsum - 14',
-        time: '08h - 14',
-        text: 'Lorem ipsum dolor sit amet consectetur.'
-    }
 ];
