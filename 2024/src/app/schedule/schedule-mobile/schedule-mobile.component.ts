@@ -1,16 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { scheduleOptions } from '../schedule-options';
+import { ScheduleService } from '../schedule.service';
 
 @Component({
   selector: 'app-schedule-mobile',
   templateUrl: './schedule-mobile.component.html',
-  styleUrl: './schedule-mobile.component.scss'
+  styleUrl: './schedule-mobile.component.scss',
+  providers: [ScheduleService]
 })
 export class ScheduleMobileComponent implements OnInit {
 
   public scheduleOptions = scheduleOptions;
   public index = 0;
   public schedule: { title?: string; time?: string; text?: string } = {}
+  public comingSoon = true;
+
+  constructor (public readonly scheduleService: ScheduleService) {}
 
   public ngOnInit(): void {
     if (this.scheduleOptions?.length > 0) {
