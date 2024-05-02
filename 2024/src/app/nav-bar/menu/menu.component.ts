@@ -18,17 +18,17 @@ export class MenuButtonComponent {
   
     if (where == 'about') {
       window.scroll({
-        top: bannerHeight + (isDropDown ? 0 : navBarHeight),
+        top: bannerHeight + (isDropDown ? -navBarHeight : 0),
         behavior: 'smooth'
       });
     } else if (where == 'schedule') {
       window.scroll({
-        top: bannerHeight + aboutHeight + (isDropDown ? 0 : navBarHeight),
+        top: bannerHeight + aboutHeight + (isDropDown ? -navBarHeight : 0),
         behavior: 'smooth'
       });
     } else {
       window.scroll({
-        top: bannerHeight + aboutHeight + scheduleHeight + (isDropDown ? -70 : 0),
+        top: bannerHeight + aboutHeight + scheduleHeight + (isDropDown ? -(navBarHeight*2) : -navBarHeight),
         behavior: 'smooth'
       });
     }
