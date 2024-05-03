@@ -1,4 +1,3 @@
-bit.manguez.al
 /* resets */
 * {padding: 0;margin: 0;box-sizing: border-box;list-style: none;transition: all .2s ease-out;}
 body {font-size: 62.5%}
@@ -235,27 +234,17 @@ header{height: 700px; background: url(img/bg-topo.png) no-repeat center; backgro
 #sponsors{text-align: center; padding: 2rem 0}
 #sponsors li {filter: grayscale(0) brightness(1); margin: 0 1rem}
 #sponsors li:hover {filter: grayscale(21) brightness(1.3)} 
-#sponsors li a{display: block;}
-#sponsors .realizacao {max-width: 1600px; align-content: center; justify-content: center }
-#sponsors .realizacao li{width:215px;}
-#sponsors .tubarao{max-width: 1600px; align-content: center; justify-content: center }
-#sponsors .tubarao li{width:195px;}
+#sponsors li a{display: block}
+#sponsors .cavalomarinho{max-width: 1600px; align-content: center; justify-content: center }
+#sponsors .cavalomarinho li{width:500px;}
 #sponsors .guaiamum{max-width: 1400px; align-content: center; justify-content: center }
-#sponsors .guaiamum li{width:168px;}
+#sponsors .guaiamum li{width:360px;}
 #sponsors .caranguejo {max-width: 1300px; align-content: center; justify-content: center}
-#sponsors .caranguejo li{width: 155px;}
+#sponsors .caranguejo li{width: 300px;}
 #sponsors .aratu {max-width: 1100px; display: flex; align-items: center; justify-content: center}
-#sponsors .aratu li{width:135px;}
-#sponsors .chie {max-width: 900px; display: flex; align-items: center; justify-content: center}
-#sponsors .chie li{width:120px;}
-#logoarsenalinovacao a {
-    width: 150px;
-    padding-right: 25px ;
-}
-#logomanoelroma a {
-    width: 120px;
-    padding-right: 25px ;
-}
+#sponsors .aratu li{width:180px;}
+#sponsors .apoio {max-width: 900px; display: flex; align-items: center; justify-content: center}
+#sponsors .apoio li{width:110px;}
 
 /* RODAPE */
 .rodape {
@@ -265,7 +254,6 @@ header{height: 700px; background: url(img/bg-topo.png) no-repeat center; backgro
     background: #eaeaea;
 
 }
-
 .redes-sociais a{overflow: hidden; width: 30px; height: 30px;display: block; border-radius: 100%; float: left; margin: 0 .5rem}
 
 
@@ -284,20 +272,17 @@ header{height: 700px; background: url(img/bg-topo.png) no-repeat center; backgro
     .menu-topo ul.ativo{display: block; position: absolute; background: #fff; top: 100%; left: 0;}
     .menu-topo ul.ativo a{padding: 1rem; color: #17235b; }
 }
-
 @media screen and (max-width:800px){
     .lista-organizadores {grid-template-columns: repeat(3,1fr);grid-gap: 3rem 1rem;margin:  0 auto}
     .lista-speakers {grid-template-columns: repeat(3,calc(100% / 3 - 1rem)); margin:  0 auto; padding: 1rem}
     .lista-speakers img {width: 100px;height: 100px;}
     .flex.vertical.box-interaction {align-items: center;}
     #countdownie {color: #fff;font-size: 2rem;}
-    #sponsors .tubarao li{width:360px;}
     #sponsors .guaiamum li{width:360px;}
     #sponsors .caranguejo li{width: 260px; padding: 20px;}
     #sponsors .aratu li{width:180px; padding: 15px;}
-    #sponsors .chie li{width:165px; padding: 15px;}
-}
 
+}
 @media screen and (max-width:600px){
     .infos .nome, .lista-organizadores .nome {font-size: 1rem;}
     .box-interaction .button {font-size: 1rem;}

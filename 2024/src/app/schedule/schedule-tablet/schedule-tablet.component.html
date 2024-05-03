@@ -1,0 +1,51 @@
+<div class="schedule-body">
+    <div class="left-arrow" (click)="shiftLeft()" *ngIf="!scheduleService.comingSoon">
+        <img src="../../../assets/images/left-arrow.png">
+    </div>
+    <div class="right-arrow" (click)="shiftRight()" *ngIf="!scheduleService.comingSoon">
+        <img src="../../../assets/images/right-arrow.png">
+    </div>
+    <div class="title" style="margin: 3.5rem 0;">Programação</div>
+    <div class="coming-soon" *ngIf="scheduleService.comingSoon">
+        <div class="card">
+            <img class="decoration" src="../../../assets/images/card-decoration-green.png">
+            <div class="title">Em breve!</div>
+        </div>
+    </div>
+    <div class="cards" *ngIf="!scheduleService.comingSoon">
+        <div class="card-background" *ngIf="schedulePair.first">
+            <div class="card">
+                <img class="decoration" src="../../../assets/images/card-decoration-green.png">
+                <div class="title">{{ schedulePair.first.title }}</div>
+                <div class="time">{{ schedulePair.first.time }}</div>
+                <div class="text">{{ schedulePair.first.text }}</div>
+            </div>
+        </div>
+        <div class="card-background" *ngIf="schedulePair.second">
+            <div class="card">
+                <img class="decoration" src="../../../assets/images/card-decoration-green.png">
+                <div class="title">{{ schedulePair.second.title }}</div>
+                <div class="time">{{ schedulePair.second.time }}</div>
+                <div class="text">{{ schedulePair.second.text }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="fake-cards" *ngIf="!scheduleService.comingSoon">
+        <div class="card-background" *ngIf="schedulePair.first">
+            <div class="card">
+                <img class="decoration" src="../../../assets/images/card-decoration-green.png">
+                <div class="title"></div>
+                <div class="time"></div>
+                <div class="text"></div>
+            </div>
+        </div>
+        <div class="card-background" *ngIf="schedulePair.second">
+            <div class="card">
+                <img class="decoration" src="../../../assets/images/card-decoration-green.png">
+                <div class="title"></div>
+                <div class="time"></div>
+                <div class="text"></div>
+            </div>
+        </div>
+    </div>
+</div>
