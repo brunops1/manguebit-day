@@ -1,9 +1,34 @@
 <div class="partners-body">
     <img class="decorator" src="../../assets/images/IDV-Mangue_RUA-DA-AURORA-MANGUEBEAT.png">
-    <div class="title">Apoio | Patrocínio</div>
+    <div class="title">Patrocínio</div>
     <div class="partners">
-        <div class="partner" *ngFor="let partner of partners">
-            <img src="{{ partner.img_address }}">
+        <div class="tubarao">
+            <div class="title">Tubarão</div>
+            <div class="partner" *ngFor="let partner of tubaroes">
+                <img src="{{ partner.img_address }}">
+            </div>
+        </div>
+        <div class="guaiamum">
+            <div class="title">Guaiamum</div>
+            <div class="partner" *ngFor="let partner of guaiamuns">
+                <img src="{{ partner.img_address }}">
+            </div>
+        </div>
+        <div class="aratu">
+            <div class="title">Aratu</div>
+            <div class="partners-container">
+                <div class="partner" *ngFor="let partner of aratus">
+                    <img src="{{ partner.img_address }}">
+                </div>
+            </div>
+        </div>
+        <div class="chie">
+            <div class="title">Chié / Apoio</div>
+            <div class="partners-container">
+                <div class="partner" *ngFor="let partner of chies">
+                    <img src="{{ partner.img_address }}">
+                </div>
+            </div>
         </div>
     </div>
 </div>
