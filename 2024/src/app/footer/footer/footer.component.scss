@@ -3,13 +3,14 @@
 .footer-body {
     width: 100%;
     display: flex;
-    padding: 0rem 3rem;
+    padding: 0.3rem 3rem;
     background-image: url('../../../assets/images/IDV-Mangue_BACKGROUND.png');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     gap: 7rem;
+    height: 5rem;
     @media (max-width: 695px) {
         gap: 4rem;
     }
@@ -17,10 +18,7 @@
         gap: 1rem;
     }
     .footer-image {
-        width: 17rem;
-        @media (max-width: 665px) {
-            width: 12rem;
-        }
+        width: 12rem;
         @media (max-width: 410px) {
             width: 10rem;
         }
@@ -35,14 +33,8 @@
         span {
             color: $main-purple;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 12px;
             font-family: $inter;
-            @media (max-width: 665px) {
-                font-size: 16px;
-            }
-            @media (max-width: 488px) {
-                font-size: 14px;
-            }
             @media (max-width: 348px) {
                 font-size: 10px;
             }
@@ -52,10 +44,7 @@
         }
 
         .manguezal {
-            width: 12rem;
-            @media (max-width: 665px) {
-                width: 8rem;
-            }
+            width: 6rem;
             @media (max-width: 410px) {
                 width: 6rem;
             }
@@ -69,6 +58,6 @@
 .site-ending {
     display: flex;
     width: 100%;
-    min-height: 2rem;
+    min-height: 1rem;
     background-color: $main-purple;
 }

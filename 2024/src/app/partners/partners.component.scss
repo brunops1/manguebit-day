@@ -6,12 +6,12 @@
     position: relative;
     width: 100%;
     align-items: center;
-    min-height: 40rem;
+    padding: 0 0 5rem 0;
     .title {
         font-family: $inter;
         font-size: 30px;
         font-weight: 800;
-        margin: 6rem 3.5rem 3.5rem 3.5rem;
+        margin: 4rem 3.5rem 1.5rem 3.5rem;
         color: $main-purple;
         @media (max-width: 815px) {
             margin: 11rem 0rem 3.5rem 0rem;
@@ -45,16 +45,68 @@
     .partners {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         width: 90%;
         padding: 2rem 0;
-        .partner {
+        .tubarao, .guaiamum, .aratu, .chie {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-                width: 60%;
+            flex-direction: column;
+            margin: 0 0 4rem 0;
+            .title {
+                text-align: center;
+                background-image: url('../../assets/images/partner-title-background.png');
+                font-size: 18px;
+                padding: 0.5rem 1rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0.7rem 0 1rem 0;
+            }
+        } 
+        .tubarao, .guaiamum {
+            width: 50%;
+            .partner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0 1rem 0;
+                img {
+                    width: 40%;
+                    @media (max-width: 1024px) {
+                        width: 50%;
+                    }
+                }   
+            }
+            @media (max-width: 1024px) {
+                width: 75%;
+            }
+        }
+        .aratu, .chie {
+            width: 75%;
+            .partners-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                .partner {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 25%;
+                    margin: 2rem 0 2rem 0;
+                    img {
+                        width: 45%;
+                    }
+                    @media (max-width: 1024px) {
+                        min-width: 50%;
+                    }
+                    @media (max-width: 580px) {
+                        min-width: 80%;
+                    }
+                }
             }
         }
     }
