@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     gap: 7rem;
-    height: 5rem;
+    height: 8rem;
     @media (max-width: 695px) {
         gap: 4rem;
     }
@@ -20,21 +20,24 @@
     .footer-image {
         width: 12rem;
         @media (max-width: 410px) {
-            width: 10rem;
+            width: 6rem;
         }
         @media (max-width: 328px) {
-            width: 8rem;
+            width: 4rem;
         }
     }
     .made-by {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media(max-width: 1024px) {
+            flex-direction: column;
+        }
         span {
             color: $main-purple;
             font-weight: 700;
             font-size: 12px;
-            font-family: $inter;
+            font-family: $exo;
             @media (max-width: 348px) {
                 font-size: 10px;
             }
@@ -52,12 +55,44 @@
                 width: 4rem;
             }
         }
+        .sebrae {
+            width: 6rem;
+            margin: 0 0 0 1rem;
+            @media (max-width: 1024px) {
+                margin: 1.5rem 0 0 0;
+            }
+            @media (max-width: 410px) {
+                width: 6rem;
+            }
+            @media (max-width: 328px) {
+                width: 4rem;
+            }
+        }
     }
 }
 
 .site-ending {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
     width: 100%;
     min-height: 1rem;
     background-color: $main-purple;
+    padding: 0.3rem 3rem;
+    color: white;
+    font-family: $exo;
+    font-size: 14px;
+    font-weight: 300;
+    div {
+        flex: 1;
+    }
+    @media (max-width: 520px) {
+        font-size: 10px;
+        gap: 0.2rem;
+        padding: 0;
+    }
+    @media (max-width: 396px) {
+        font-size: 8px;
+    }
 }

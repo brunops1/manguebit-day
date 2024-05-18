@@ -4,11 +4,29 @@ import { ScheduleModule } from '../../schedule/schedule.module';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AboutComponent } from '../../about/about.component';
 import { PartnersComponent } from '../../partners/partners.component';
+import { VideoComponent } from '../../video/video.component';
+import { SpeakersComponponent } from '../../speakers/speakers-desktop/speakers.component';
+import { SpeakersTabletComponent } from '../../speakers/speakers-tablet/speakers-tablet.component';
+import { SpeakersMobileComponent } from '../../speakers/speakers-mobile/speakers-mobile.component';
+import { EventPreviewComponent } from '../../event-preview/event-preview.component';
+import { MaintainersComponent } from '../../maintainers/maintainers.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, BannerModule, ScheduleModule, AboutComponent, PartnersComponent],
+  imports: [
+    CommonModule, 
+    BannerModule, 
+    ScheduleModule, 
+    AboutComponent, 
+    PartnersComponent, 
+    VideoComponent, 
+    SpeakersComponponent,
+    SpeakersTabletComponent,
+    SpeakersMobileComponent,
+    EventPreviewComponent,
+    MaintainersComponent
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

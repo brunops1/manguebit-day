@@ -1,0 +1,13 @@
+<div class="speakers-body">
+    <div class="title" style="margin: 3.5rem 0;">Palestrantes</div>
+    <div class="cards">
+        <div class="card-background" *ngFor="let speaker of speakers">
+            <div class="card">
+                <img class="decoration" src="{{ speaker.image_address }}">
+            </div>
+        </div>
+    </div>
+    <div class="load-more" (click)="loadMore()">
+        Carregar mais
+    </div>
+</div>

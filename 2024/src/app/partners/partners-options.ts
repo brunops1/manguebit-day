@@ -17,10 +17,6 @@ export const partnersOptions: { img_address: string, type: string }[] = [
         type: 'guaiamum',
     },
     {
-        img_address: '../../../assets/images/Sebrae-01.png',
-        type: 'chie'
-    },
-    {
         img_address: '../../../assets/images/brain.png',
         type: 'aratu',
     },

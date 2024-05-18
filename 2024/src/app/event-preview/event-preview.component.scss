@@ -1,0 +1,112 @@
+@import '../../styles.scss';
+
+.preview-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/images/Backgroung-roxo-3.png');
+    background-repeat: repeat;
+    background-size: contain;
+    flex-direction: column;
+    .preview-body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $main-blue;
+        width: 93%;
+        .decorator {
+            position: absolute;
+            width: 20rem;
+            top: -4.5rem;
+            left: -8rem;
+            transform: rotate(-14.5deg);
+            @media (max-width: 330px) {
+                width: 15rem;
+            }
+            @media (max-width: 215px) {
+                width: 12rem;
+            }
+        }
+        .preview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+            .title {
+                font-family: $exo;
+                font-size: 26px;
+                font-weight: 700;
+                text-align: center;
+                color: $main-purple;
+                margin: 3rem 0 0 0;
+                @media (max-width: 670px) {
+                    margin: 10rem 0 0 0;
+                }
+            }
+            .events {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 0 0 6rem 0;
+                @media (max-width: 1024px) {
+                    flex-direction: column;
+                }
+                .event {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    @media (max-width: 1024px) {
+                        margin: 1.5rem;
+                    }
+                    img {
+                        width: 80%;
+                        border: 5px solid $main-purple;
+                        transform: rotate(-3deg);
+                    }
+                    .text {
+                        font-family: $exo;
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: $main-purple;
+                        margin: 2rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .closure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 0 3rem 0;
+        .title {
+            font-family: $exo;
+            font-size: 26px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+            margin: 3rem 0 0 0;
+        }
+        .text {
+            font-family: $exo;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+            color: white;   
+        }
+        img {
+            width: 70%;
+            cursor: pointer;
+        }
+        .button:hover {
+            opacity: 0.6;
+        }
+    }
+}
