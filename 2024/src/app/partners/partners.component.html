@@ -2,19 +2,37 @@
     <div class="title">Patrocínio</div>
     <div class="partners">
         <div class="tubarao">
-            <img class="title" src="../../assets/images/categoria-tubarao.png">
-            <div class="partner" *ngFor="let partner of tubaroes">
-                <img src="{{ partner.img_address }}">
+            <div class="title" *ngIf="!mobile" style="background-image: url('../../assets/images/categoria-tubarao-background.png')"></div>
+            <div class="title" *ngIf="mobile" style="background-image: url('../../assets/images/categoria-tubarao-mobile.png')"></div>            
+            <div class="partners-container">
+                <div class="partner" *ngFor="let partner of tubaroes">
+                    <img src="{{ partner.img_address }}">
+                </div>
             </div>
         </div>
         <div class="guaiamum">
-            <img class="title" src="../../assets/images/categoria-guaiamum.png">
-            <div class="partner" *ngFor="let partner of guaiamuns">
-                <img src="{{ partner.img_address }}">
+            <div class="title" *ngIf="!mobile" style="background-image: url('../../assets/images/categoria-guaiamum-background.png')"></div>
+            <div class="title" *ngIf="mobile" style="background-image: url('../../assets/images/categoria-guaiamum-mobile.png')"></div>
+            <div class="partners-container">
+                <div class="partner" *ngFor="let partner of guaiamuns">
+                    <img src="{{ partner.img_address }}">
+                </div>
             </div>
+            
+        </div>
+        <div class="crab">
+            <div class="title" *ngIf="!mobile" style="background-image: url('../../assets/images/categoria-caranguejo-background.png')"></div>
+            <div class="title" *ngIf="mobile" style="background-image: url('../../assets/images/categoria-caranguejo-mobile.png')"></div>
+            <div class="partners-container">
+                <div class="partner" *ngFor="let partner of crabs">
+                    <img src="{{ partner.img_address }}">
+                </div>
+            </div>
+            
         </div>
         <div class="aratu">
-            <img class="title" src="../../assets/images/categoria-aratu.png">
+            <div class="title" *ngIf="!mobile" style="background-image: url('../../assets/images/categoria-aratu-background.png')"></div>
+            <div class="title" *ngIf="mobile" style="background-image: url('../../assets/images/categoria-aratu-mobile.png')"></div>
             <div class="partners-container">
                 <div class="partner" *ngFor="let partner of aratus">
                     <img src="{{ partner.img_address }}">
@@ -22,10 +40,12 @@
             </div>
         </div>
         <div class="chie" style="margin: 0;">
-            <img class="title" src="../../assets/images/categoria-chie.png">
+            <div class="title" *ngIf="!mobile" style="background-image: url('../../assets/images/categoria-chie-background.png')"></div>
+            <div class="title" *ngIf="mobile" style="background-image: url('../../assets/images/categoria-chie-mobile.png')"></div>
             <div class="partners-container">
                 <div class="partner" *ngFor="let partner of chies">
-                    <img src="{{ partner.img_address }}">
+                    <img *ngIf="partner.sizing" src="{{ partner.img_address }}" style="width: {{ partner.sizing.width }}%;">
+                    <img *ngIf="!partner.sizing" src="{{ partner.img_address }}">
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import '../../../styles.scss';
 
 .maintainers-body {
     position: relative;
@@ -73,46 +73,6 @@
     .cards-transition {
         opacity: 0;
     }
-    .maintainers-fake-cards {
-        display: flex;
-        width: 70%;
-        margin: 0;
-        position: absolute;
-        justify-content: center;
-        top: 9.25rem;
-        left: 15%;
-        transition: all .3s ease-out;
-        .card-background {
-            display: flex;
-            width: 80%;
-            align-items: center;
-            justify-content: center;
-            .card {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                width: 15rem;
-                height: 15rem;
-                background-position: 50% 35%;
-                background-size: cover;
-                border: 1rem solid $main-purple;
-                img {
-                    width: 40%;
-                    border-radius: 50%;
-                }
-                @media(max-width: 415px) {
-                    width: 10rem;
-                    height: 10rem;
-                }
-                @media(max-width: 290px) {
-                    width: 7rem;
-                    height: 7rem;
-                    border: 0.2rem solid $main-purple;
-                }
-            }
-        }
-    }
     .linkedin {
         display: flex;
         align-items: center;
@@ -122,6 +82,9 @@
         img {
             width: 2rem;
         }
+        div {
+            margin: 0 0 0.3rem 0;
+        }
         a {
             font-family: $exo;
             font-size: 26px;
@@ -129,6 +92,7 @@
             text-decoration: none;
             border-bottom: 2px solid $main-purple;
             color: $main-purple;
+            margin: 0 0 0.2rem 0;
         }
 
     }

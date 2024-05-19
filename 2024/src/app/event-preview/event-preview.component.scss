@@ -4,9 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/images/Backgroung-roxo-3.png');
-    background-repeat: repeat;
-    background-size: contain;
+    background-color: $main-purple;
     flex-direction: column;
     .preview-body {
         position: relative;
@@ -34,14 +32,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 5rem;
+            gap: 0.5rem;
             .title {
                 font-family: $exo;
-                font-size: 26px;
+                font-size: 34px;
                 font-weight: 700;
                 text-align: center;
                 color: $main-purple;
-                margin: 3rem 0 0 0;
+                margin: 3rem 0 5rem 0;
+                @media (max-width: 580px) {
+                    font-size: 26px;
+                }
                 @media (max-width: 670px) {
                     margin: 10rem 0 0 0;
                 }
@@ -53,6 +54,12 @@
                 padding: 0 0 6rem 0;
                 @media (max-width: 1024px) {
                     flex-direction: column;
+                }
+                .section {
+                    display: flex;
+                    @media (max-width: 580px) {
+                        flex-direction: column;
+                    }
                 }
                 .event {
                     display: flex;
@@ -69,7 +76,7 @@
                     }
                     .text {
                         font-family: $exo;
-                        font-size: 20px;
+                        font-size: 30px;
                         font-weight: 700;
                         text-align: center;
                         color: $main-purple;
@@ -83,9 +90,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         gap: 1.5rem;
         padding: 0 0 3rem 0;
+        width: 70%;
+        @media (max-width: 580px) {
+            flex-direction: column;       
+        }
+        .title-background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            gap: 1rem;
+            @media (max-width: 580px) {
+                width: 90%;
+            }
+        }
         .title {
             font-family: $exo;
             font-size: 26px;
@@ -100,10 +121,31 @@
             font-weight: 500;
             text-align: center;
             color: white;   
+            width: 100%;
+            @media (max-width: 297px) {
+                font-size: 14px; 
+            }
         }
         img {
-            width: 70%;
+            width: 50%;
             cursor: pointer;
+            padding: 0 5rem;
+            @media (max-width: 1000px) {
+                padding: 0 2rem;
+            }
+            @media (max-width: 665px) {
+                padding: 0 1rem;
+            }
+            @media (max-width: 580px) {
+                width: 80%;
+                padding: 0;   
+            }
+        }
+        .button {
+            margin: 2rem 0 0 0;
+            @media (max-width: 580px) {
+                margin: 0;
+            }
         }
         .button:hover {
             opacity: 0.6;

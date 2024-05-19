@@ -17,5 +17,7 @@
 
     <app-partners></app-partners>
 
-    <app-maintainers></app-maintainers>
+    <app-maintainers-desktop *ngIf="!tablet && !mobile"></app-maintainers-desktop>
+    <app-maintainers-tablet *ngIf="tablet"></app-maintainers-tablet>
+    <app-maintainers *ngIf="mobile"></app-maintainers>
 </div>

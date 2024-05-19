@@ -5,15 +5,8 @@
     <div class="right-arrow" (click)="shiftRight()">
         <img src="../../../assets/images/right-arrow-purple.png">
     </div>
-    <div class="title" style="margin: 3.5rem 0;">Programação</div>
+    <div class="title" style="margin: 3.5rem 0;">Palestrantes</div>
     <div class="speakers-cards">
-        <div class="card-background" *ngIf="speaker">
-            <div class="card">
-                <img src="{{ speaker.image_address }}">
-            </div>
-        </div>
-    </div>
-    <div class="speakers-fake-cards">
         <div class="card-background" *ngIf="speaker">
             <div class="card">
                 <img src="{{ speaker.image_address }}">

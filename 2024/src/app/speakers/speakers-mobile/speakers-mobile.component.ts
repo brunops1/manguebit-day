@@ -22,38 +22,29 @@ export class SpeakersMobileComponent implements OnInit {
       }
     
       public shiftLeft(): void {
-        if (this.index >= 1) {
           document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-          document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-right');
           this.index--;
+          if (this.index < 0) {
+            this.index = this.speakers.length - 1;
+          }
           
           setTimeout(() => {
             this.speaker = this.speakers[this.index];
-            (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'none';
-            document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-right');
             document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-            setTimeout(() => {      
-                (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'flex';
-            }, 10);
           }, 100);
-        }
+        
       }
     
       public shiftRight(): void {
-        if (this.index < this.speakers.length - 1) {
-          document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-          document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-left');
-          this.index++;
-          this.speaker = this.speakers[this.index];
-          setTimeout(() => {
-            (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'none';
-            document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-left');
-            document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-            setTimeout(() => {      
-                (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'flex';
-            }, 10);
-          }, 100);
+        document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
+        this.index++;
+        if (this.index > this.speakers.length - 1) {
+          this.index = 0;
         }
+        this.speaker = this.speakers[this.index];
+        setTimeout(() => {
+          document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
+        }, 100);
       }
 
 }

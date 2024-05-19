@@ -9,12 +9,12 @@
     padding: 0;
     .title {
         font-family: $exo;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 800;
         margin: 4rem 3.5rem 1.5rem 3.5rem;
         color: $main-purple;
         @media (max-width: 450px) {
-            font-size: 25px;
+            font-size: 40px;
         }
         @media (max-width: 260px) {
             font-size: 20px;
@@ -28,49 +28,66 @@
         justify-content: space-around;
         width: 90%;
         padding: 2rem 0 0 0;
-        .tubarao, .guaiamum, .aratu, .chie {
+        .tubarao, .guaiamum, .aratu, .chie, .crab {
             display: flex;
             flex-direction: column;
             margin: 0 0 4rem 0;
             .title {
                 align-self: center;
-                width: 35%;
                 margin: 0.7rem 0 1rem 0;
-                @media (max-width: 580px) {
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50% 50%;
+                height: 2.5rem;
+                @media (max-width: 1024px) {
                     width: 70%;
+                    
                 }
             }
         } 
-        .tubarao, .guaiamum {
-            width: 50%;
-            .partner {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                margin: 1rem 0 1rem 0;
-                img {
-                    width: 40%;
-                    @media (max-width: 1024px) {
-                        width: 50%;
-                    }
-                }   
-            }
-            @media (max-width: 1024px) {
-                width: 75%;
+        .tubarao {
+            margin: 0 0 1rem 0;
+            .title {
+                @media (max-width: 1024px) {
+                    width: 70%;
+                }
+                width: 40%;
             }
         }
-        .aratu, .chie {
-            width: 75%;
+        .guaiamum {
             .title {
-                width: 25%;
+                width: 55%;
                 @media (max-width: 1024px) {
-                    width: 35%;
-                }
-                @media (max-width: 580px) {
                     width: 70%;
                 }
             }
+        }
+        .crab {
+            .title {
+                width: 80%;
+                @media (max-width: 1024px) {
+                    width: 70%;
+                }
+            }
+        }
+        .aratu {
+            .title {
+                width: 65%;
+                @media (max-width: 1024px) {
+                    width: 70%;
+                }
+            }
+        }
+        .chie {
+            .title {
+                width: 90%;
+                @media (max-width: 1024px) {
+                    width: 70%;
+                }
+            }
+        }
+        .tubarao, .guaiamum {
+            width: 50%;
             .partners-container {
                 display: flex;
                 flex-wrap: wrap;
@@ -84,6 +101,54 @@
                     min-width: 25%;
                     margin: 2rem 0 2rem 0;
                     img {
+                        width: 60%;
+                        @media (max-width: 1024px) {
+                            width: 40%;
+                        }
+                    }
+                    @media (max-width: 1024px) {
+                        min-width: 50%;
+                    }
+                    @media (max-width: 580px) {
+                        min-width: 80%;
+                    }
+                }
+            }
+            @media (max-width: 1024px) {
+                width: 75%;
+            }
+        }
+        .guaiamum {
+            .partners-container {
+                .partner {
+                    img {
+                        width: 60%;
+                        @media (max-width: 1024px) {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+        .aratu, .chie, .crab {
+            width: 75%;
+            .title {
+                
+            }
+            .partners-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                .partner {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 25%;
+                    max-width: 50%;
+                    margin: 2rem 0 2rem 0;
+                    img {
                         width: 45%;
                     }
                     @media (max-width: 1024px) {
@@ -91,6 +156,18 @@
                     }
                     @media (max-width: 580px) {
                         min-width: 80%;
+                    }
+                }
+            }
+        }
+        .crab {
+            .partners-container {
+                .partner {
+                    img {
+                        width: 80%;
+                        @media (max-width: 1024px) {
+                            width: 60%;
+                        }
                     }
                 }
             }

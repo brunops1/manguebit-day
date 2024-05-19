@@ -24,37 +24,30 @@ export class ScheduleMobileComponent implements OnInit {
   }
 
   public shiftLeft(): void {
-    if (this.index >= 1) {
       document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-      document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-right');
       this.index--;
       
       setTimeout(() => {
+        if (this.index < 0) {
+          this.index = this.scheduleOptions.length - 1;
+        } 
         this.schedule = this.scheduleOptions[this.index];
-        (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'none';
-        document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-right');
         document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-        setTimeout(() => {      
-            (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'flex';
-        }, 10);
       }, 100);
-    }
+   
   }
 
   public shiftRight(): void {
-    if (this.index < this.scheduleOptions.length - 1) {
-      document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-      document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-left');
-      this.index++;
+    document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
+    this.index++;
+    
+    setTimeout(() => {
+      if (this.index > this.scheduleOptions.length - 1) {
+          this.index = 0;   
+      }
       this.schedule = this.scheduleOptions[this.index];
-      setTimeout(() => {
-        (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'none';
-        document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-left');
-        document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-        setTimeout(() => {      
-            (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'flex';
-        }, 10);
-      }, 100);
-    }
+      document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
+    }, 100);
+    
   }
 }

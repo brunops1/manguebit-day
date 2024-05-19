@@ -10,14 +10,14 @@ export const maintaintersOptions: { image_address: string; linkedin: string; nam
         name: 'Bruno Pinheiro',
     },
     {
-        image_address: '../../assets/images/digna-m.jpg',
-        linkedin: 'https://www.linkedin.com/in/mariadignamota/',
-        name: 'Maria Digna Mota',
-    },
-    {
         image_address: '../../assets/images/Isaias-m.jpg',
         linkedin: 'https://www.linkedin.com/in/isaiasdias/',
         name: 'Isaías Dias',
+    },
+    {
+        image_address: '../../assets/images/tompson-m.jpg',
+        linkedin: 'https://www.linkedin.com/in/jptompson/',
+        name: 'João Tompson',
     },
     {
         image_address: '../../assets/images/ligia-m.jpg',
@@ -25,18 +25,18 @@ export const maintaintersOptions: { image_address: string; linkedin: string; nam
         name: 'Lígia Spencer',
     },
     {
-        image_address: '../../assets/images/luan-m.jpeg',
+        image_address: '../../assets/images/luan-m.jpg',
         linkedin: 'https://www.linkedin.com/in/luankelvin/',
         name: 'Luan Kelvin',
     },
     {
-        image_address: '../../assets/images/lucio-m.jpeg',
+        image_address: '../../assets/images/lucio-m.jpg',
         linkedin: 'https://www.linkedin.com/in/luciosribeiro/',
         name: 'Lúcio Ribeiro',
     },
     {
-        image_address: '../../assets/images/tompson-m.jpg',
-        linkedin: 'https://www.linkedin.com/in/jptompson/',
-        name: 'João Tompson',
+        image_address: '../../assets/images/digna-m.jpg',
+        linkedin: 'https://www.linkedin.com/in/mariadignamota/',
+        name: 'Maria Digna Mota',
     }
-]
+];

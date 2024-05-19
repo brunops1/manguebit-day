@@ -58,30 +58,6 @@
     .cards-transition {
         opacity: 0;
     }
-    .speakers-fake-cards {
-        display: flex;
-        width: 70%;
-        margin: 0 0 2rem 0;
-        position: absolute;
-        justify-content: center;
-        top: 9.25rem;
-        left: 15%;
-        transition: all .3s ease-out;
-        .card-background {
-            display: flex;
-            width: 80%;
-            align-items: center;
-            justify-content: center;
-            .card {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img {
-                    width: 90%;
-                }
-            }
-        }
-    }
     .cards-shift-left {
         left: -50rem;
     }

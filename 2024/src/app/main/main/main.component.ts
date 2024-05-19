@@ -9,7 +9,9 @@ import { SpeakersComponponent } from '../../speakers/speakers-desktop/speakers.c
 import { SpeakersTabletComponent } from '../../speakers/speakers-tablet/speakers-tablet.component';
 import { SpeakersMobileComponent } from '../../speakers/speakers-mobile/speakers-mobile.component';
 import { EventPreviewComponent } from '../../event-preview/event-preview.component';
-import { MaintainersComponent } from '../../maintainers/maintainers.component';
+import { MaintainersComponent } from '../../maintainers/maintainers-mobile/maintainers.component';
+import { MaintainersDesktopComponent } from '../../maintainers/maintainers-desktop/maintainers-desktop.component';
+import { MaintainersTabletComponenet } from '../../maintainers/maintainers-tablet/maintainers-tablet.component';
 
 @Component({
   selector: 'app-main',
@@ -25,7 +27,9 @@ import { MaintainersComponent } from '../../maintainers/maintainers.component';
     SpeakersTabletComponent,
     SpeakersMobileComponent,
     EventPreviewComponent,
-    MaintainersComponent
+    MaintainersComponent,
+    MaintainersDesktopComponent,
+    MaintainersTabletComponenet
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'

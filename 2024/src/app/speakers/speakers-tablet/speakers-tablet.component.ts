@@ -28,43 +28,40 @@ export class SpeakersTabletComponent implements OnInit {
     }
 
     public shiftLeft(): void {
-        if (this.index >= 2) {
-          document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-          document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-right');
-          this.index -= 2;
-          
-          setTimeout(() => {
+      document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
+      this.index -= 2;
+      
+      setTimeout(() => {
+        if (this.index < 0) {
+          if (-this.index % 2 == 0) {
+            this.index = this.speakers.length - 2;
             this.speakersPair.first = this.speakers[this.index];
             this.speakersPair.second = this.speakers[this.index + 1];
-            (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'none';
-            document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-right');
-            document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-            setTimeout(() => {      
-                (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'flex';
-            }, 10);
-          }, 100);
-        }
-      }
-
-      public shiftRight(): void {
-        if (this.index <= this.speakers.length - 2) {
-          document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-          document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-left');
-          this.index += 2;
+          } else {
+            this.index = this.speakers.length - 1;
+            this.speakersPair.first = this.speakers[this.index];
+            this.speakersPair.second = this.speakers[0];
+          }
+        } else {
           this.speakersPair.first = this.speakers[this.index];
           this.speakersPair.second = this.speakers[this.index + 1];
-          setTimeout(() => {
-            (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'none';
-            document.getElementsByClassName('speakers-fake-cards')[0].classList.toggle('cards-shift-left');
-            document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
-            setTimeout(() => {      
-                (document.getElementsByClassName('speakers-fake-cards')[0] as HTMLElement).style.display = 'flex';
-            }, 10);
-          }, 100);
-        } else if (this.index <= this.speakers.length - 1) {
-          this.speakersPair.first = this.speakers[this.index];
-          delete this.speakersPair.second;
         }
-      }
+        document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
+      }, 100);
+    }
 
+    public shiftRight(): void {      
+      document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
+      this.index += 2;
+      
+      setTimeout(() => {
+        if (this.index > this.speakers.length - 1) {
+          this.index = 0;   
+        }
+        this.speakersPair.first = this.speakers[this.index];
+        this.speakersPair.second = this.speakers[this.index + 1];
+        document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
+      }, 100);
+      
+    }
 }
