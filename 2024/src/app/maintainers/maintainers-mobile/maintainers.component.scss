@@ -1,0 +1,105 @@
+@import '../../../styles.scss';
+
+.maintainers-body {
+    position: relative;
+    background-color: $main-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 5rem 0;
+    min-height: 25rem;
+    width: 100%;
+    .left-arrow, .right-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 45%;
+        cursor: pointer;
+    }
+    .left-arrow {
+        left: 0;
+    }
+    .right-arrow {
+        right: 0;
+    }
+    .title {
+        font-family: $exo;
+        font-size: 30px;
+        font-weight: 800;
+        color: $main-purple;
+        text-align: center;
+    }
+    .maintainers-cards {
+        display: flex;
+        width: 70%;
+        margin: 0;
+        justify-content: center;
+        z-index: +1;
+        opacity: 1;
+        transition: all .3s ease-out;
+        .card-background {
+            display: flex;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 15rem;
+                height: 15rem;
+                background-position: 50% 35%;
+                background-size: cover;
+                border: 1rem solid $main-purple;
+                img {
+                    width: 40%;
+                    border-radius: 50%;
+                }
+                @media(max-width: 415px) {
+                    width: 10rem;
+                    height: 10rem;
+                    border: 0.5rem solid $main-purple;
+                }
+                @media(max-width: 290px) {
+                    width: 7rem;
+                    height: 7rem;
+                    border: 0.2rem solid $main-purple;
+                }
+            }
+        }
+    }
+    .cards-transition {
+        opacity: 0;
+    }
+    .linkedin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 2rem 0 0 0;
+        img {
+            width: 2rem;
+        }
+        div {
+            margin: 0 0 0.3rem 0;
+        }
+        a {
+            font-family: $exo;
+            font-size: 26px;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid $main-purple;
+            color: $main-purple;
+            margin: 0 0 0.2rem 0;
+        }
+
+    }
+    .cards-shift-left {
+        left: -50rem;
+    }
+    .cards-shift-right {
+        left: 50rem;
+    }
+}

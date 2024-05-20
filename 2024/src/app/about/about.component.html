@@ -6,24 +6,17 @@
                 <a>
                     O Mangue.bit é a maior conferência de startups organizada por uma comunidade voluntária no Brasil, 
                     a comunidade Manguezal. Em sua 8ª edição, este evento anual reúne startups, investidores e empreendedores 
-                    de todo o país, destacando o vibrante ecossistema de Recife. Aqui, as conexões se formam e as ideias ganham vida.
+                    de todo o país, destacando o vibrante ecossistema de Recife. Aqui, as conexões se formam e as ideias ganham 
+                    vida.
                 </a>
             </div>
-            <img class="decoration" src="../../assets/images/IDV-Mangue_PONTE.png" style="transform: rotate(1.8deg);" *ngIf="!mobile">
+            <img class="subscribe" src="../../assets/images/subscribe-here-button.png" (click)="goToLink('https://www.even3.com.br/manguebit-2024-438948/')" *ngIf="!mobile">
         </div>
         <div class="section">
-            <div class="title">
-                <a>Aqui no Mangue.bit é onde as startups de Recife brilham e a inovação do Brasil se encontra!</a>
-            </div>       
-            <div class="text">
-                <a>
-                    Imagine um lugar onde os pioneiros da inovação de todo o Brasil se encontram para compartilhar ideias, 
-                    fazer conexões valiosas e assistir a pitches empolgantes. Isso é Mangue.bit! Aqui, startups locais têm o 
-                    palco aberto para brilhar e captar a atenção de investidores e grandes empresas.
-                </a>
+            <div class="rotated-image">
+                <img src="../../assets/images/manguebit.png">
             </div>
-            <img class="subscribe" src="../../assets/images/subscribe-here-button.png" (click)="goToLink('https://www.even3.com.br/manguebit-2024-438948/')">
-            <img class="hidden-decoration" src="../../assets/images/IDV-Mangue_PONTE.png" style="transform: rotate(1.8deg);" *ngIf="mobile">
+            <img class="subscribe" src="../../assets/images/subscribe-here-button.png" style="margin: 5rem 0 3rem 0;" (click)="goToLink('https://www.even3.com.br/manguebit-2024-438948/')" *ngIf="mobile">
         </div>
     </div>
 </div>
