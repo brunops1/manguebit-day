@@ -1,0 +1,19 @@
+<div class="maintainers-body">
+    <div class="left-arrow" (click)="shiftLeft()">
+        <img src="../../../assets/images/left-arrow-purple.png">
+    </div>
+    <div class="right-arrow" (click)="shiftRight()">
+        <img src="../../../assets/images/right-arrow-purple.png">
+    </div>
+    <div class="title" style="margin: 3.5rem 0;">Organizadores</div>
+    <div class="maintainers-cards">
+        <div class="card-background" *ngIf="maintainer">
+            <div class="card" style="background-image: url('{{ maintainer.image_address }}');">
+            </div>
+        </div>
+    </div>
+    <div class="linkedin" *ngIf="maintainer">
+        <img src="../../assets/images/LinkedIn.png" (click)="goToLink(maintainer.linkedin!)">
+        <div><a href="{{ maintainer.linkedin }}" target="_blank">{{maintainer.name}}</a></div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+@import '../../../styles.scss';
+
+.maintainers-body {
+    background-color: $main-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 5rem 0;
+    .title {
+        font-family: $exo;
+        font-size: 30px;
+        font-weight: 800;
+        color: $main-purple;
+        text-align: center;
+    }
+    .cards {
+        display: grid;
+        width: 85%;
+        margin: 0 0 2rem 0;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 2.2rem;
+        .card-background {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 12rem;
+                height: 12rem;
+                background-position: 50% 35%;
+                background-size: cover;
+                border: 0.7rem solid $main-purple;
+                img {
+                    width: 40%;
+                    border-radius: 50%;
+                }
+                @media(max-width: 415px) {
+                    width: 10rem;
+                    height: 10rem;
+                    border: 0.5rem solid $main-purple;
+                }
+                @media(max-width: 290px) {
+                    width: 7rem;
+                    height: 7rem;
+                    border: 0.2rem solid $main-purple;
+                }
+            }
+        }
+    }
+    .linkedin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0 0 0;
+        img {
+            width: 2rem;
+        }
+        div {
+            margin: 0 0 0.3rem 0;
+        }
+        a {
+            font-family: $exo;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid $main-purple;
+            color: $main-purple;
+            margin: 0 0 0.2rem 0;
+        }
+
+    }
+}

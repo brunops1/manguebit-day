@@ -1,8 +1,23 @@
 <div class="main-body">
     <app-banner></app-banner>
+
     <app-about></app-about>
+
+    <app-video></app-video>
+
+    <app-speaker *ngIf="!tablet && !mobile"></app-speaker>
+    <app-speakers-tablet *ngIf="tablet"></app-speakers-tablet>
+    <app-speakers-mobile *ngIf="mobile"></app-speakers-mobile>
+    
     <app-schedule *ngIf="!tablet && !mobile"></app-schedule>
     <app-schedule-tablet *ngIf="tablet"></app-schedule-tablet>
     <app-schedule-mobile *ngIf="mobile"></app-schedule-mobile>
+
+    <app-event-preview></app-event-preview>
+
     <app-partners></app-partners>
+
+    <app-maintainers-desktop *ngIf="!tablet && !mobile"></app-maintainers-desktop>
+    <app-maintainers-tablet *ngIf="tablet"></app-maintainers-tablet>
+    <app-maintainers *ngIf="mobile"></app-maintainers>
 </div>

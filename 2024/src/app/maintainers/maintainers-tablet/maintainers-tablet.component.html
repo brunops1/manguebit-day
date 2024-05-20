@@ -1,0 +1,27 @@
+<div class="maintainers-body">
+    <div class="left-arrow" (click)="shiftLeft()">
+        <img src="../../../assets/images/left-arrow-purple.png">
+    </div>
+    <div class="right-arrow" (click)="shiftRight()">
+        <img src="../../../assets/images/right-arrow-purple.png">
+    </div>
+    <div class="title" style="margin: 3.5rem 0;">Organizadores</div>
+    <div class="maintainers-cards">
+        <div class="card-background" *ngIf="maintainerPair.first">
+            <div class="card" style="background-image: url('{{ maintainerPair.first.image_address }}');">
+            </div>
+            <div class="linkedin" *ngIf="maintainerPair.first">
+                <img src="../../assets/images/LinkedIn.png" (click)="goToLink(maintainerPair.first.linkedin!)">
+                <div><a href="{{ maintainerPair.first.linkedin }}" target="_blank">{{maintainerPair.first.name}}</a></div>
+            </div>
+        </div>
+        <div class="card-background" *ngIf="maintainerPair.second">
+            <div class="card" style="background-image: url('{{ maintainerPair.second.image_address }}');">
+            </div>
+            <div class="linkedin" *ngIf="maintainerPair.second">
+                <img src="../../assets/images/LinkedIn.png" (click)="goToLink(maintainerPair.second.linkedin!)">
+                <div><a href="{{ maintainerPair.second.linkedin }}" target="_blank">{{maintainerPair.second.name}}</a></div>
+            </div>
+        </div>
+    </div>
+</div>

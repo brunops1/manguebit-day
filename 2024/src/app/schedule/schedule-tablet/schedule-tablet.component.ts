@@ -26,42 +26,40 @@ export class ScheduleTabletComponent implements OnInit {
   }
 
   public shiftLeft(): void {
-    if (this.index >= 2) {
-      document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-      document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-right');
-      this.index -= 2;
-      
-      setTimeout(() => {
+    document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
+    this.index -= 2;
+
+    setTimeout(() => {
+      if (this.index < 0) {
+        if (-this.index % 2 == 0) {
+          this.index = this.scheduleOptions.length - 2;
+          this.schedulePair.first = this.scheduleOptions[this.index];
+          this.schedulePair.second = this.scheduleOptions[this.index + 1];
+        } else {
+          this.index = this.scheduleOptions.length - 1;
+          this.schedulePair.first = this.scheduleOptions[this.index];
+          this.schedulePair.second = this.scheduleOptions[0];
+        }
+      } else {
         this.schedulePair.first = this.scheduleOptions[this.index];
         this.schedulePair.second = this.scheduleOptions[this.index + 1];
-        (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'none';
-        document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-right');
-        document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-        setTimeout(() => {      
-            (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'flex';
-        }, 10);
-      }, 100);
-    }
+      }
+      document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
+    }, 100);
+
   }
 
   public shiftRight(): void {
-    if (this.index <= this.scheduleOptions.length - 2) {
-      document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-      document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-left');
+    document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
       this.index += 2;
-      this.schedulePair.first = this.scheduleOptions[this.index];
-      this.schedulePair.second = this.scheduleOptions[this.index + 1];
+      
       setTimeout(() => {
-        (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'none';
-        document.getElementsByClassName('fake-cards')[0].classList.toggle('cards-shift-left');
+        if (this.index > this.scheduleOptions.length - 1) {
+            this.index = 0;   
+        }
+        this.schedulePair.first = this.scheduleOptions[this.index];
+        this.schedulePair.second = this.scheduleOptions[this.index + 1];
         document.getElementsByClassName('cards')[0].classList.toggle('cards-transition');
-        setTimeout(() => {      
-            (document.getElementsByClassName('fake-cards')[0] as HTMLElement).style.display = 'flex';
-        }, 10);
-      }, 100);
-    } else if (this.index <= this.scheduleOptions.length - 1) {
-      this.schedulePair.first = this.scheduleOptions[this.index];
-      delete this.schedulePair.second;
-    }
+    }, 100);
   }
 }
