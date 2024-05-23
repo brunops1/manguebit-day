@@ -13,4 +13,12 @@ import { NavBarComponent } from './nav-bar/bar/bar.component';
 })
 export class AppComponent {
   title = 'manguebit';
+
+  public clickListener(event: Event): void {
+    if ((event.target as HTMLElement).getAttribute('class') != 'hamburguer-button') {
+      if (document.querySelector('.list')?.getAttribute('class') == 'list dropdown-active') {
+        document.querySelector('.list')?.classList.toggle('dropdown-active');
+      }
+    }
+  }
 }

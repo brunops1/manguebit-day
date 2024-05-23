@@ -1,5 +1,7 @@
-<app-nav-bar></app-nav-bar>
-<router-outlet>
+<div (click)="clickListener($event)">
+    <app-nav-bar></app-nav-bar>
+    <router-outlet>
 
-</router-outlet>
-<app-footer></app-footer>
+    </router-outlet>
+    <app-footer></app-footer>
+</div>
