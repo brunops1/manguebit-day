@@ -1,10 +1,4 @@
-<div class="speakers-body" 
-    (mouseup)="endSlide($event)" 
-    (mousedown)="startSlide($event)" 
-    (touchstart)="startTouchSlide($event)" 
-    (touchend)="endTouchSlide($event)"
-    
-    >
+<div class="speakers-body" >
     <div class="left-arrow" (click)="shiftLeft()">
         <img src="../../../assets/images/left-arrow-purple.png">
     </div>
@@ -12,7 +6,9 @@
         <img src="../../../assets/images/right-arrow-purple.png">
     </div>
     <div class="title" style="margin: 3.5rem 0;">Palestrantes</div>
-    <div class="speakers-cards">
+    <div class="speakers-cards" 
+        (touchstart)="startTouchSlide($event)" 
+        (touchend)="endTouchSlide($event)">
         <div class="card-background" *ngIf="speaker">
             <div class="card">
                 <img src="{{ speaker.image_address }}">
