@@ -1,4 +1,4 @@
-<div class="speakers-body">
+<div class="speakers-body" (mouseup)="endSlide($event)" (mousedown)="startSlide($event)" (touchstart)="startTouchSlide($event)" (touchend)="endTouchSlide($event)">
     <div class="left-arrow" (click)="shiftLeft()">
         <img src="../../../assets/images/left-arrow-purple.png">
     </div>

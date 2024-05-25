@@ -29,7 +29,6 @@ export class PartnersComponent implements OnInit {
   public ngOnInit(): void {
     this.setupPartnersCollections();
     this.mobile = (document.getElementsByClassName('nav-bar-body')[0] as HTMLElement).offsetWidth <= 1024;
-    console.log(this.mobile)
   }
 
   public setupPartnersCollections(): void {
@@ -40,6 +39,5 @@ export class PartnersComponent implements OnInit {
       if (partner.type == 'chie') this.chies.push(partner);
       if (partner.type == 'crab') this.crabs.push(partner);
     }
-    console.log(this.aratus)
   }
 }

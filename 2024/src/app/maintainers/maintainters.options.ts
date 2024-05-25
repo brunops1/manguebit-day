@@ -25,11 +25,6 @@ export const maintaintersOptions: { image_address: string; linkedin: string; nam
         name: 'Lígia Spencer',
     },
     {
-        image_address: '../../assets/images/luan-m.jpg',
-        linkedin: 'https://www.linkedin.com/in/luankelvin/',
-        name: 'Luan Kelvin',
-    },
-    {
         image_address: '../../assets/images/lucio-m.jpg',
         linkedin: 'https://www.linkedin.com/in/luciosribeiro/',
         name: 'Lúcio Ribeiro',
