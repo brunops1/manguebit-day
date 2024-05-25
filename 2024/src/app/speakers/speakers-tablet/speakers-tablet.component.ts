@@ -18,13 +18,18 @@ export class SpeakersTabletComponent implements OnInit {
     public index = 0;
     public speakers = speakersOptions;
 
+    public clientXonMouseDown = 0;
+    public clientXonMouseUp = 0;
+
     public ngOnInit(): void {
-    if (this.index <= this.speakers.length - 2) {
+      this.clientXonMouseDown = 0;
+      this.clientXonMouseUp = 0;
+      if (this.index <= this.speakers.length - 2) {
         this.speakersPair.first = this.speakers[this.index];
         this.speakersPair.second = this.speakers[this.index + 1];
-        } else if (this.index <= this.speakers.length - 1) {
+      } else if (this.index <= this.speakers.length - 1) {
         this.speakersPair.first = this.speakers[this.index];
-        }
+      }
     }
 
     public shiftLeft(): void {
@@ -63,5 +68,29 @@ export class SpeakersTabletComponent implements OnInit {
         document.getElementsByClassName('speakers-cards')[0].classList.toggle('cards-transition');
       }, 100);
       
+    }
+
+    public startSlide(event: MouseEvent): void {
+      this.clientXonMouseDown = event.clientX;
+    }
+
+    public startTouchSlide(event: TouchEvent): void {
+      this.clientXonMouseDown = event.touches[0].clientX;
+    }
+
+    public endSlide(event: MouseEvent): void {
+      if (event.clientX + 10 < this.clientXonMouseDown) {
+        this.shiftLeft();
+      } else if (event.clientX - 10 > this.clientXonMouseDown) {
+        this.shiftRight();
+      }
+    }
+
+    public endTouchSlide(event: TouchEvent): void {
+      if (event.touches[0].clientX + 10 < this.clientXonMouseDown) {
+        this.shiftLeft();
+      } else if (event.touches[0].clientX - 10 > this.clientXonMouseDown) {
+        this.shiftRight();
+      }
     }
 }

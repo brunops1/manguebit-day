@@ -132,6 +132,6 @@ export const partnersOptions: { img_address: string; type: string; sizing?: { wi
     {
         img_address: '../../../assets/images/daus.png',
         type: 'chie',
-        sizing: { width: 40, height: 0}
+        sizing: { width: 50, height: 0}
     }
 ];
