@@ -2,21 +2,7 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
-        image_address: '../../assets/images/patrick.png',
-        pallet: [],
-        icon_set: []
-    },
-    {
-        name: '',
-        role: '',
-        image_address: '../../assets/images/jo.png',
-        pallet: [],
-        icon_set: []
-    },
-    {
-        name: '',
-        role: '',
-        image_address: '../../assets/images/flavia.png',
+        image_address: '../../assets/images/ana-carla.png',
         pallet: [],
         icon_set: []
     },
@@ -30,21 +16,7 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
-        image_address: '../../assets/images/vagner.png',
-        pallet: [],
-        icon_set: []
-    },
-    { 
-        name: '',
-        role: '',
-        image_address: '../../assets/images/Luciana.png',
-        pallet: [],
-        icon_set: []
-    },
-    {
-        name: '',
-        role: '',
-        image_address: '../../assets/images/patrick-costa.png',
+        image_address: '../../assets/images/claudio.png',
         pallet: [],
         icon_set: []
     },
@@ -58,7 +30,14 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
-        image_address: '../../assets/images/ana-carla.png',
+        image_address: '../../assets/images/emidia.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/flavia.png',
         pallet: [],
         icon_set: []
     },
@@ -66,20 +45,6 @@ export const speakersOptions: { name: string; role: string; image_address: strin
         name: '',
         role: '',
         image_address: '../../assets/images/fred.png',
-        pallet: [],
-        icon_set: []
-    },
-    {
-        name: '',
-        role: '',
-        image_address: '../../assets/images/claudio.png',
-        pallet: [],
-        icon_set: []
-    },
-    {
-        name: '',
-        role: '',
-        image_address: '../../assets/images/emidia.png',
         pallet: [],
         icon_set: []
     },
@@ -100,11 +65,46 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
-        image_address: '../../assets/images/luis.png',
+        image_address: '../../assets/images/jo.png',
         pallet: [],
         icon_set: []
     },
     
+    { 
+        name: '',
+        role: '',
+        image_address: '../../assets/images/Luciana.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/luis.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/mariana.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/patrick-costa.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/patrick.png',
+        pallet: [],
+        icon_set: []
+    },
     {
         name: '',
         role: '',
@@ -129,8 +129,8 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
-        image_address: '../../assets/images/mariana.png',
+        image_address: '../../assets/images/vagner.png',
         pallet: [],
         icon_set: []
-    },
-]
+    }, 
+];

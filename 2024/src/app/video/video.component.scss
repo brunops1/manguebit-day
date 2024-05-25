@@ -18,8 +18,13 @@
         iframe {
             border: 8px solid $main-purple;
         }
+        @media (max-width: 1024px) {
+            width: 70%;
+
+        }
         @media (max-width: 580px) {
             min-height: 40%;
+            width: 95%;
         }
     }
 }
