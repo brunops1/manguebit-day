@@ -24,6 +24,14 @@ export const partnersOptions: { img_address: string; type: string; sizing?: { wi
         type: 'chie'
     },
     {
+        img_address: '../../../assets/images/Even3.png',
+        type: 'chie'
+    },
+    {
+        img_address: '../../../assets/images/Excelsior-01.png',
+        type: 'chie'
+    },
+    {
         img_address: '../../../assets/images/fast.png',
         type: 'chie'
     },
@@ -41,6 +49,10 @@ export const partnersOptions: { img_address: string; type: string; sizing?: { wi
     },
     {
         img_address: '../../../assets/images/midiavox.png',
+        type: 'chie'
+    },
+    {
+        img_address: '../../../assets/images/Neurbots.png',
         type: 'chie'
     },
     {
@@ -73,6 +85,7 @@ export const partnersOptions: { img_address: string; type: string; sizing?: { wi
         img_address: '../../../assets/images/cubo.png',
         type: 'aratu',
     },
+    
     {
         img_address: '../../../assets/images/happen.png',
         type: 'aratu',
@@ -133,18 +146,6 @@ export const partnersOptions: { img_address: string; type: string; sizing?: { wi
         img_address: '../../../assets/images/daus.png',
         type: 'chie',
         sizing: { width: 50, height: 0}
-    },
-    {
-        img_address: '../../../assets/images/Even3.png',
-        type: 'chie'
-    },
-    {
-        img_address: '../../../assets/images/Excelsior-01.png',
-        type: 'chie'
-    },
-    {
-        img_address: '../../../assets/images/Neurbots.png',
-        type: 'chie'
     },
     {
         img_address: '../../../assets/images/tisaude.png',
