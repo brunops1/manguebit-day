@@ -133,5 +133,22 @@ export const partnersOptions: { img_address: string; type: string; sizing?: { wi
         img_address: '../../../assets/images/daus.png',
         type: 'chie',
         sizing: { width: 50, height: 0}
-    }
+    },
+    {
+        img_address: '../../../assets/images/Even3.png',
+        type: 'chie'
+    },
+    {
+        img_address: '../../../assets/images/Excelsior-01.png',
+        type: 'chie'
+    },
+    {
+        img_address: '../../../assets/images/Neurbots.png',
+        type: 'chie'
+    },
+    {
+        img_address: '../../../assets/images/tisaude.png',
+        type: 'chie'
+    },
+
 ];
