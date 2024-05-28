@@ -18,16 +18,18 @@
         text-align: center;
     }
     .cards {
-        display: grid;
+        display: flex;
         width: 85%;
         margin: 0 0 2rem 0;
-        grid-template-columns: auto auto auto auto auto;
-        row-gap: 2.2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         .card-background {
             display: flex;
-            width: 100%;
+            width: 20%;
             align-items: center;
             justify-content: center;
+            margin: 1rem 0 0 0;
             .card {
                 display: flex;
                 align-items: center;

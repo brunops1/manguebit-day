@@ -9,7 +9,7 @@
     background-color: $main-blue;
     height: 40rem;
     @media (max-width: 580px ) {
-        height: 20rem;
+        height: 30rem;
         padding: 0 0;
     }
     .video {
@@ -17,14 +17,17 @@
         min-height: 65%;
         iframe {
             border: 8px solid $main-purple;
+            @media (max-width: 580px) {
+                border: 4px solid $main-purple;
+            }
         }
         @media (max-width: 1024px) {
             width: 70%;
 
         }
         @media (max-width: 580px) {
-            min-height: 40%;
-            width: 95%;
+            min-height: 98%;
+            width: 98%;
         }
     }
 }

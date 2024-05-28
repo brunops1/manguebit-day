@@ -2,6 +2,13 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
+        image_address: '../../assets/images/alvaro.jpg',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
         image_address: '../../assets/images/ana-carla.png',
         pallet: [],
         icon_set: []
@@ -10,6 +17,13 @@ export const speakersOptions: { name: string; role: string; image_address: strin
         name: '',
         role: '',
         image_address: '../../assets/images/ana.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/andre.jpg',
         pallet: [],
         icon_set: []
     },
@@ -31,6 +45,13 @@ export const speakersOptions: { name: string; role: string; image_address: strin
         name: '',
         role: '',
         image_address: '../../assets/images/emidia.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/evandro.jpg',
         pallet: [],
         icon_set: []
     },
@@ -69,7 +90,13 @@ export const speakersOptions: { name: string; role: string; image_address: strin
         pallet: [],
         icon_set: []
     },
-    
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/jose.jpg',
+        pallet: [],
+        icon_set: []
+    },
     { 
         name: '',
         role: '',
@@ -108,6 +135,13 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
+        image_address: '../../assets/images/pedro.jpg',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
         image_address: '../../assets/images/pierre.png',
         pallet: [],
         icon_set: []
@@ -115,7 +149,21 @@ export const speakersOptions: { name: string; role: string; image_address: strin
     {
         name: '',
         role: '',
+        image_address: '../../assets/images/rodrigo.jpg',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
         image_address: '../../assets/images/stefano.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/tereza.jpg',
         pallet: [],
         icon_set: []
     },
@@ -130,6 +178,13 @@ export const speakersOptions: { name: string; role: string; image_address: strin
         name: '',
         role: '',
         image_address: '../../assets/images/vagner.png',
+        pallet: [],
+        icon_set: []
+    },
+    {
+        name: '',
+        role: '',
+        image_address: '../../assets/images/vitor.jpg',
         pallet: [],
         icon_set: []
     }, 
